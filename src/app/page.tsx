@@ -62,27 +62,52 @@ export default function Home() {
   return (
     <main>
 
-          <nav className="navbar">
-            <a className="brand" href="#home" aria-label="Sushanth Patil home">
-              SB<span>.</span>
-            </a>
-            <div className="nav-links">
-              <a href="#about">About</a>
-              <a href="#projects">Projects</a>
-              <a href="#resumes">Resumes</a>
-              <a href="#skills">Skills</a>
-              <a href="#contact">Contact</a>
-            </div>
+          
+      <nav className="navbar">
+        <a
+          className="brand"
+          href="#home"
+          aria-label="Sushanth Patil home"
+        >
+          SP<span>.</span>
+        </a>
 
-            <a
-              className="nav-cta"
-              href="https://www.linkedin.com/in/sushanth-b-patil-028191173/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Let&apos;s connect <span>↗</span>
-            </a>
-          </nav>
+        {/* Desktop navigation */}
+        <div className="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#resumes">Resumes</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        {/* Mobile hamburger menu */}
+        <details className="mobile-menu">
+          <summary aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </summary>
+
+          <div className="mobile-menu-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#resumes">Resumes</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </details>
+
+        <a
+          className="nav-cta"
+          href="https://www.linkedin.com/in/sushanth-b-patil-028191173/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Let&apos;s connect <span>↗</span>
+        </a>
+      </nav>
+
 
        
       <section className="hero section-wrap" id="home">
@@ -416,7 +441,7 @@ export default function Home() {
       </section>
 
       <footer className="footer section-wrap">
-        <a className="brand" href="#home">SB<span>.</span></a>
+        <a className="brand" href="#home">SP<span>.</span></a>
         <p>Designed with intention. Built with curiosity.</p>
         <a href="#home">BACK TO TOP ↑</a>
       </footer>
