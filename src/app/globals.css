@@ -1164,3 +1164,43 @@ a {
 }
 
 
+/* Scroll to top button */
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll-to-top {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #67e8f9;
+  color: #101a2b;
+  font-size: 25px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.scroll-to-top:hover {
+  transform: translateY(-5px);
+  background: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .scroll-to-top {
+    right: 16px;
+    bottom: 20px;
+    width: 42px;
+    height: 42px;
+    font-size: 23px;
+  }
+}
+

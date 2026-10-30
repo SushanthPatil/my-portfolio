@@ -409,7 +409,6 @@ export default function Home() {
                 {String(index + 1).padStart(2, "0")}
               </span>
               <span>{skill}</span>
-              <span className="skill-arrow">↗</span>
             </div>
           ))}
         </div>
@@ -445,6 +444,14 @@ export default function Home() {
         <p>Designed with intention. Built with curiosity.</p>
         <a href="#home">BACK TO TOP ↑</a>
       </footer>
+
+      <a
+        href="#home"
+        className="scroll-to-top"
+        aria-label="Scroll to top"
+      >
+        ↑
+      </a>
     </main>
   );
 }
